@@ -8,7 +8,7 @@ node('slave') {
    }
    stage ('Test Maven'){
       def mvnHome = tool 'maven3'
-      sh -X "${mvnHome}/bin/mvn clean test"
+      sh -x "${mvnHome}/bin/mvn clean test"
    }
 	
 }
